@@ -70,3 +70,5 @@ class Jirafa extends Perro {
 const jirafa= new Jirafa("Amarilla", "Exotico", "Liso", "Alta", "Tropical");
 console.log(jirafa.getInfo());
 console.log(jirafa.comer());
+//--------------------------------------------------------------------------------------------------------------
+//En esta sesion se trabajo con aspectos como las propiedades, herencia, polimorfismo y metodos 
