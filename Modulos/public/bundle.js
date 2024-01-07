@@ -1,7 +1,7 @@
 'use strict';
 
 var carrito = () => {
-    console.log("Carrito Funcionando");
+    console.log("Carrito trabajando");
 };
 
 console.log("Hello World");

@@ -1,8 +1,12 @@
 {
+  "type": "module",
   "devDependencies": {
     "rollup": "^4.9.3"
   },
   "dependencies": {
     "@types/estree": "^1.0.5"
+  },
+  "scripts": {
+    "build": "rollup --config --watch"
   }
 }
