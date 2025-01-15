@@ -19,7 +19,7 @@
 //     console.log("El resto de la division es: " + resto);
 // }
 //--------------------------------------------------------------------------------------------
-//Introducir tres números por teclado, hallar el promedio de los tres números, la suma y desplegar del primer 
+//Introducir tres números por teclado, hallar el promedio de los tres números, la suma y desplegar del primer
 //número el doble, del segundo número el triple y del tercer número el cuadrado
 // let num1 = parseFloat(prompt("Introduzca el primer numero"));
 // let num2 = parseFloat(prompt("Introduzca el segundo numero"));
@@ -45,7 +45,7 @@
 //     }
 // }
 //------------------------------------------------------------------------------------------------
-// Desarrollar un algoritmo que lea dos números, e indique si la suma de los dos números es par, caso contrario 
+// Desarrollar un algoritmo que lea dos números, e indique si la suma de los dos números es par, caso contrario
 //visualizar la suma es impar
 // let num1 = parseInt(prompt("Digite el primer numero"));
 // let num2 = parseInt(prompt("Digite el segundo numero"));
@@ -61,30 +61,26 @@
 // };
 // operacion(num1, num2);
 //--------------------------------------------------------------------------------------------------
-//Desarrolle el código fuente de un programa que permita ingresar cuatro notas sobre 20 con decimales, obtener 
+//Desarrolle el código fuente de un programa que permita ingresar cuatro notas sobre 20 con decimales, obtener
 //su promedio y visualizar <APROBADO>,si su promedio es mayor a 14.5; caso contrario su promedio sea menor a 14.5
 // y mayor a 10 visualizará <SUPLETORIO>. Si la nota promedio es menor a 10 mostrará <PERDIDO EL AÑO>
 const operacion = (nota1, nota2) => {
-    let promedio = parseFloat((nota1 + nota2) / 2);
-    if(promedio > 14.5) {
-        console.log("APROBADO");
-    }
-    else if((promedio < 14.5) && (promedio >= 10.0)) {
-        console.log("SUPLETORIO");
-    } else {
-        console.log("Ha perdido el año");
-    }
-}
+  let promedio = parseFloat((nota1 + nota2) / 2);
+  if (promedio > 14.5) {
+    console.log("APROBADO");
+  } else if (promedio < 14.5 && promedio >= 10.0) {
+    console.log("SUPLETORIO");
+  } else {
+    console.log("Ha perdido el año");
+  }
+};
 const distinguir = (nota1, nota2, callback) => {
-if((nota1 <= 20.0) && (nota2 <= 20.0) && (nota1 >= 0.0) && (nota2 >= 0.0)) {
+  if (nota1 <= 20.0 && nota2 <= 20.0 && nota1 >= 0.0 && nota2 >= 0.0) {
     callback(nota1, nota2);
-} else {
+  } else {
     console.log("Introduzca valores menores de 20.0 y mayores de 0.0");
-}
-}
+  }
+};
 let nota1 = parseFloat(prompt("Digite la primera nota"));
 let nota2 = parseFloat(prompt("Digite la segunda nota"));
-distinguir(nota1, nota2, operacion);
-
-
-
+// distinguir(nota1, nota2, operacion);
